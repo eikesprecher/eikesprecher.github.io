@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eike Sprecher — Commercial Growth &amp; Scaling Portfolio</title>
+<meta name="description" content="Eike Sprecher. Commercial Growth &amp; Scaling Portfolio. Four industries: aerospace, biotech, clinical e-commerce, maritime deep-tech AI.">
+<meta name="author" content="Eike Sprecher">
+<meta property="og:title" content="Eike Sprecher — Commercial Growth &amp; Scaling Portfolio">
+<meta property="og:description" content="Turning technical capability into commercial reality in markets where the rules keep moving.">
+<meta property="og:type" content="profile">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230e1116'/><text y='72' x='50' font-size='62' font-family='Georgia,serif' fill='%23c98b3f' text-anchor='middle'>E</text></svg>">
+<style>
+:root{
+  --ink:#11151b; --ink-2:#39414d; --ink-3:#69737f;
+  --line:#e0e3e8; --line-2:#eef0f3;
+  --bg:#ffffff; --bg-2:#f7f8fa;
+  --dark:#0e1116; --dark-2:#171c24;
+  --accent:#b0762f; --accent-soft:#f6efe4;
+  --max:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;
+  font-size:17px; line-height:1.62; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:var(--max); margin:0 auto; padding:0 28px}
+p{margin:0 0 1.05em}
+a{color:inherit}
+
+/* ---------- NAV ---------- */
+nav{
+  position:sticky; top:0; z-index:60; background:rgba(255,255,255,.94);
+  backdrop-filter:saturate(1.6) blur(10px); border-bottom:1px solid var(--line);
+}
+nav .wrap{display:flex; align-items:center; gap:26px; height:56px}
+nav .nm{font-weight:700; letter-spacing:-.01em; margin-right:auto; font-size:15px}
+nav a{
+  text-decoration:none; font-size:13.5px; color:var(--ink-2); font-weight:500;
+  letter-spacing:.02em; white-space:nowrap;
+}
+nav a:hover{color:var(--accent)}
+@media(max-width:820px){nav .wrap{gap:16px; overflow-x:auto} nav .nm{display:none}}
+
+/* ---------- HERO ---------- */
+header{background:var(--dark); color:#fff; padding:74px 0 66px}
+.hero{display:grid; grid-template-columns:1fr 268px; gap:56px; align-items:center}
+.eyebrow{
+  font-size:11.5px; letter-spacing:.19em; text-transform:uppercase;
+  color:var(--accent); font-weight:700; margin-bottom:18px;
+}
+h1{
+  font-family:Georgia,"Times New Roman",serif; font-weight:400;
+  font-size:clamp(40px,6.4vw,62px); line-height:1.03; letter-spacing:-.02em; margin:0 0 14px;
+}
+.sub{font-size:19px; color:#b8c0cb; margin:0 0 30px; max-width:34ch}
+.contact{display:flex; flex-wrap:wrap; gap:9px}
+.contact a{
+  display:inline-flex; align-items:center; gap:7px; text-decoration:none;
+  font-size:13.5px; padding:9px 15px; border:1px solid #2c3440; border-radius:6px;
+  color:#dfe4ea; transition:.16s;
+}
+.contact a:hover{border-color:var(--accent); color:#fff; background:#1a212a}
+.contact a.primary{background:var(--accent); border-color:var(--accent); color:#12161c; font-weight:600}
+.contact a.primary:hover{background:#c98b3f; border-color:#c98b3f; color:#12161c}
+.portrait{width:100%; aspect-ratio:1; border-radius:8px; overflow:hidden; background:#1b222b}
+.portrait img{width:100%; height:100%; object-fit:cover; display:block}
+@media(max-width:800px){
+  .hero{grid-template-columns:1fr; gap:34px}
+  .portrait{width:170px; order:-1}
+}
+
+
+.hstats{display:grid; grid-template-columns:repeat(3,1fr); margin-top:52px; border-top:1px solid #232a34; padding-top:32px}
+.hstat{padding-right:28px; border-right:1px solid #232a34}
+.hstat:last-child{border-right:none; padding-right:0}
+.hstat:not(:first-child){padding-left:28px}
+.hstat b{display:block; font-family:Georgia,serif; font-size:32px; line-height:1.1; color:#fff; letter-spacing:-.02em; margin-bottom:8px; font-weight:400}
+.hstat span{font-size:14px; color:#98a2ae; line-height:1.5; display:block}
+.hedu{margin-top:26px; padding-top:20px; border-top:1px solid #232a34; font-size:13.5px; color:#8b95a2}
+@media(max-width:700px){.hstats{grid-template-columns:1fr; gap:24px; }.hstat{border-right:none; padding:0 !important}}
+@media print{.hstat b,.hstats,.hedu{color:#000 !important}.hstat span{color:#333 !important}}
+
+/* ---------- SECTION ---------- */
+section{padding:62px 0; border-top:1px solid var(--line)}
+section:first-of-type{border-top:none}
+section[id],.case[id],footer[id]{scroll-margin-top:72px}
+.slabel{
+  font-size:11.5px; letter-spacing:.19em; text-transform:uppercase;
+  color:var(--accent); font-weight:700; margin-bottom:22px;
+}
+h2{
+  font-family:Georgia,serif; font-weight:400; font-size:clamp(26px,3.6vw,34px);
+  line-height:1.16; letter-spacing:-.015em; margin:0 0 26px;
+}
+.lead{font-size:19px; line-height:1.68; color:var(--ink-2); max-width:74ch}
+
+/* ---------- STATS ---------- */
+.stats{display:grid; grid-template-columns:repeat(3,1fr); gap:0; border:1px solid var(--line); border-radius:8px; overflow:hidden}
+.stat{padding:28px 26px; border-right:1px solid var(--line); background:var(--bg-2)}
+.stat:last-child{border-right:none}
+.stat b{
+  display:block; font-family:Georgia,serif; font-size:34px; line-height:1.1;
+  color:var(--ink); letter-spacing:-.02em; margin-bottom:9px; font-weight:400;
+}
+.stat span{font-size:14.5px; color:var(--ink-2); line-height:1.5; display:block}
+.edu{
+  margin-top:16px; padding:16px 20px; border:1px solid var(--line); border-radius:8px;
+  font-size:14px; color:var(--ink-2); background:#fff;
+}
+@media(max-width:700px){.stats{grid-template-columns:1fr}.stat{border-right:none;border-bottom:1px solid var(--line)}.stat:last-child{border-bottom:none}}
+
+/* ---------- TIMELINE ---------- */
+.tl{position:relative; margin-top:8px}
+.tl:before{content:""; position:absolute; left:7px; top:8px; bottom:8px; width:2px; background:var(--line)}
+.tlrow{position:relative; padding:0 0 4px 34px; margin-bottom:20px}
+.tlrow:last-child{margin-bottom:0}
+.dot{
+  position:absolute; left:0; top:6px; width:16px; height:16px; border-radius:50%;
+  background:#fff; border:2px solid var(--line-2); box-shadow:0 0 0 3px #fff;
+}
+.tlrow[data-kind="work"] .dot{border-color:var(--accent); background:var(--accent)}
+.tlrow[data-kind="edu"] .dot{border-color:var(--ink-3); background:#fff}
+.tldate{font-size:12px; letter-spacing:.09em; text-transform:uppercase; color:var(--ink-3); font-weight:700}
+.tlrole{font-weight:650; font-size:16.5px; margin:3px 0 2px; letter-spacing:-.01em}
+.tlorg{font-size:14.5px; color:var(--ink-2)}
+.tlorg em{font-style:normal; color:var(--ink-3)}
+.tlsector{
+  display:inline-block; margin-top:7px; font-size:11.5px; letter-spacing:.08em;
+  text-transform:uppercase; font-weight:700; color:var(--accent);
+  background:var(--accent-soft); padding:3px 9px; border-radius:4px;
+}
+
+/* ---------- BEHIND ---------- */
+.behind{display:grid; gap:22px}
+.bitem{padding-left:20px; border-left:2px solid var(--line); max-width:80ch}
+.bitem:hover{border-left-color:var(--accent)}
+.bitem p{margin:0; color:var(--ink-2); font-size:16.5px}
+.bitem b{color:var(--ink); font-weight:650}
+
+/* ---------- FILTER ---------- */
+.filterbar{margin-bottom:30px}
+.fhint{font-size:14px; color:var(--ink-3); margin-bottom:12px}
+.chips{display:flex; flex-wrap:wrap; gap:8px}
+.chip{
+  font:inherit; font-size:13.5px; font-weight:550; cursor:pointer;
+  padding:8px 14px; border-radius:20px; border:1px solid var(--line);
+  background:#fff; color:var(--ink-2); transition:.14s;
+}
+.chip:hover{border-color:var(--ink-3); color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--dark); border-color:var(--dark); color:#fff}
+.fcount{margin-top:12px; font-size:13.5px; color:var(--ink-3)}
+
+/* ---------- CASE ---------- */
+.case{
+  border:1px solid var(--line); border-radius:10px; overflow:hidden;
+  margin-bottom:20px; background:#fff; transition:.2s;
+}
+.case.dim{opacity:.34}
+.case.hide{display:none}
+.chead{padding:28px 30px 26px; background:var(--bg-2); border-bottom:1px solid var(--line)}
+.cno{font-size:11.5px; letter-spacing:.19em; text-transform:uppercase; color:var(--accent); font-weight:700}
+.ctitle{font-family:Georgia,serif; font-size:clamp(23px,3vw,30px); font-weight:400; letter-spacing:-.015em; margin:9px 0 12px; line-height:1.2}
+.cmeta{font-size:14px; color:var(--ink-2); line-height:1.6}
+.ctags{display:flex; flex-wrap:wrap; gap:6px; margin-top:16px}
+.tag{
+  font-size:11.5px; letter-spacing:.06em; text-transform:uppercase; font-weight:700;
+  color:var(--ink-2); background:#fff; border:1px solid var(--line); padding:4px 10px; border-radius:4px;
+}
+.tag.on{background:var(--accent); border-color:var(--accent); color:#12161c}
+
+.outcome{padding:26px 30px; background:#fff; border-bottom:1px solid var(--line-2)}
+.olabel{font-size:11.5px; letter-spacing:.19em; text-transform:uppercase; color:var(--ink-3); font-weight:700; margin-bottom:14px}
+.olist{list-style:none; margin:0; padding:0; display:grid; gap:11px}
+.olist li{position:relative; padding-left:24px; font-size:15.5px; color:var(--ink); line-height:1.55}
+.olist li:before{
+  content:""; position:absolute; left:0; top:8px; width:9px; height:9px;
+  border-radius:2px; background:var(--accent);
+}
+
+.cbody{padding:0 30px}
+.cbody[hidden]{display:none}
+.blk{padding:26px 0; border-bottom:1px solid var(--line-2)}
+.blk:last-of-type{border-bottom:none}
+.blabel{font-size:11.5px; letter-spacing:.19em; text-transform:uppercase; color:var(--accent); font-weight:700; margin-bottom:12px}
+.blk p{color:var(--ink-2); max-width:80ch}
+.move{margin-bottom:22px; max-width:80ch}
+.move:last-child{margin-bottom:0}
+.move h4{font-size:16.5px; font-weight:650; margin:0 0 7px; color:var(--ink); letter-spacing:-.01em; line-height:1.4}
+.move p{margin:0}
+.tradeoff{background:var(--accent-soft); margin:0 -30px; padding:26px 30px; border-top:1px solid #ecdfc9}
+.tradeoff .blabel{color:#8a5c22}
+.tradeoff h4{font-size:16.5px; font-weight:650; margin:0 0 7px; letter-spacing:-.01em}
+.tradeoff p{color:#4a3c28; margin:0; max-width:80ch}
+
+.ctoggle{
+  width:100%; font:inherit; font-size:14px; font-weight:600; cursor:pointer;
+  padding:16px 30px; background:#fff; border:none; border-top:1px solid var(--line);
+  color:var(--accent); text-align:left; display:flex; align-items:center; gap:9px;
+}
+.ctoggle:hover{background:var(--bg-2)}
+.ctoggle .arw{transition:transform .2s; display:inline-block}
+.ctoggle[aria-expanded="true"] .arw{transform:rotate(90deg)}
+@media(max-width:640px){
+  .chead,.outcome,.cbody,.ctoggle{padding-left:20px; padding-right:20px}
+  .tradeoff{margin:0 -20px; padding-left:20px; padding-right:20px}
+}
+
+/* ---------- REUSABLE ---------- */
+.kits{display:grid; grid-template-columns:repeat(2,1fr); gap:18px; margin-top:26px}
+.kit{border:1px solid var(--line); border-radius:8px; padding:24px 24px 20px; background:#fff}
+.kit h3{font-size:16.5px; font-weight:650; margin:0 0 14px; letter-spacing:-.01em}
+.kit ul{list-style:none; margin:0; padding:0}
+.kit li{font-size:14.5px; color:var(--ink-2); padding:5px 0 5px 17px; position:relative; line-height:1.5}
+.kit li:before{content:""; position:absolute; left:0; top:13px; width:5px; height:5px; border-radius:50%; background:var(--accent)}
+@media(max-width:760px){.kits{grid-template-columns:1fr}}
+.through{margin-top:26px; padding:24px 26px; background:var(--dark); color:#d3d9e1; border-radius:8px; font-size:16.5px; line-height:1.65}
+.through b{color:#fff}
+
+/* ---------- QUOTE ---------- */
+blockquote{
+  margin:0; padding:34px 0 0; border-top:2px solid var(--accent);
+  font-family:Georgia,serif; font-size:clamp(21px,2.9vw,27px); line-height:1.45; letter-spacing:-.01em;
+}
+blockquote cite{
+  display:block; margin-top:18px; font-family:inherit; font-style:normal;
+  font-size:14px; color:var(--ink-3); letter-spacing:.02em;
+}
+
+/* ---------- CV ---------- */
+.job{padding:26px 0; border-bottom:1px solid var(--line-2)}
+.job:last-child{border-bottom:none}
+.jtop{display:flex; flex-wrap:wrap; gap:6px 16px; align-items:baseline; margin-bottom:4px}
+.jdate{font-size:12px; letter-spacing:.09em; text-transform:uppercase; color:var(--ink-3); font-weight:700; min-width:118px}
+.jco{font-weight:700; font-size:16.5px; letter-spacing:-.01em}
+.jloc{font-size:13px; color:var(--ink-3); letter-spacing:.04em; text-transform:uppercase}
+.jdesc{font-size:13.5px; color:var(--ink-3); margin:0 0 14px 0; padding-left:134px; line-height:1.5}
+.jrole{font-weight:650; font-size:15.5px; margin:14px 0 8px; padding-left:134px}
+.job ul{margin:0; padding:0 0 0 152px; list-style:none}
+.job li{position:relative; font-size:15px; color:var(--ink-2); padding:0 0 9px 17px; line-height:1.58}
+.job li:before{content:""; position:absolute; left:0; top:9px; width:5px; height:5px; border-radius:50%; background:var(--line)}
+.gen li:before{background:var(--accent)}
+@media(max-width:760px){
+  .jdesc,.jrole{padding-left:0}
+  .job ul{padding-left:2px}
+}
+.two{display:grid; grid-template-columns:1fr 1fr; gap:18px}
+@media(max-width:700px){.two{grid-template-columns:1fr}}
+.card{border:1px solid var(--line); border-radius:8px; padding:22px 24px}
+.card h3{font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); margin:0 0 12px; font-weight:700}
+.card p{margin:0 0 .6em; font-size:14.5px; color:var(--ink-2)}
+.card p:last-child{margin:0}
+.card b{color:var(--ink)}
+
+/* ---------- FOOTER ---------- */
+footer{background:var(--dark); color:#9aa4b1; padding:56px 0 48px; font-size:14.5px}
+footer h2{color:#fff; margin-bottom:20px}
+footer a{color:#dfe4ea; text-decoration:none; border-bottom:1px solid #39414d}
+footer a:hover{color:var(--accent); border-color:var(--accent)}
+.frow{display:flex; flex-wrap:wrap; gap:12px 34px; margin-bottom:30px}
+.fnote{font-size:12.5px; color:#5d6774; border-top:1px solid #232a34; padding-top:22px}
+
+@media print{
+  nav,.ctoggle,.filterbar,.contact{display:none!important}
+  .cbody{display:block!important}
+  header{background:#fff!important; color:#000!important; padding:20px 0}
+  h1,.sub{color:#000!important}
+  .case{break-inside:avoid; border-color:#ccc}
+  footer{background:#fff; color:#000}
+  body{font-size:11pt}
+}
+
+/* ---------- HERO QUOTE ---------- */
+.hquote{margin-top:48px; padding-top:32px; border-top:1px solid #232a34}
+.hquote p{font-family:Georgia,serif; font-size:clamp(18px,2.3vw,23px); line-height:1.48; color:#e6eaef; margin:0 0 14px; letter-spacing:-.01em; max-width:62ch}
+.hquote cite{font-style:normal; font-size:13.5px; color:#8b95a2; letter-spacing:.02em}
+
+/* ---------- HOW I WORK ---------- */
+.srcnote{font-size:13px; color:var(--ink-3); line-height:1.6; margin-top:28px; padding-top:18px; border-top:1px solid var(--line-2); max-width:80ch}
+.bitem q{quotes:"\201C" "\201D"; font-style:italic; color:var(--ink)}
+.plabel{
+  display:block; font-size:11px; letter-spacing:.19em; text-transform:uppercase;
+  color:var(--accent); font-weight:700; margin-bottom:7px;
+}
+
+.cref{
+  color:var(--accent); text-decoration:none; font-weight:650; font-size:14.5px;
+  white-space:nowrap; border-bottom:1px solid transparent;
+}
+.cref:hover{border-bottom-color:var(--accent)}
+@media print{.cref{display:none}}
+
+/* ---------- NEXT ---------- */
+#next{background:var(--dark); border-top:none}
+#next .slabel{color:var(--accent)}
+#next .bitem{border-left-color:#2c3440}
+#next .bitem p{color:#c3cbd5}
+#next .bitem b{color:#fff}
+#next h2{color:#fff}
+#next .lead{color:#c3cbd5}
+#next .lead b{color:#fff}
+#next .bitem{border-left-color:#2c3440}
+#next .bitem p{color:#c3cbd5}
+#next .bitem b{color:#fff}
+
+/* ---------- CAREER TIMELINE (expandable) ---------- */
+.tlhead{
+  display:block; width:100%; text-align:left; font:inherit; cursor:pointer;
+  background:none; border:none; padding:0 0 2px; color:inherit;
+}
+.tlhead:hover .tlrole{color:var(--accent)}
+.tlhead .tldate,.tlhead .tlrole,.tlhead .tlorg{display:block}
+.tlmore{
+  display:inline-block; margin-top:9px; font-size:12.5px; font-weight:650;
+  color:var(--accent); letter-spacing:.03em;
+}
+.tlmore .arw{display:inline-block; transition:transform .2s}
+.tlhead[aria-expanded="true"] .tlmore .arw{transform:rotate(90deg)}
+.tlbody{padding:14px 0 6px}
+.tlbody[hidden]{display:none}
+.cvdesc{font-size:13.5px; color:var(--ink-3); line-height:1.55; margin:0 0 12px}
+.tlbody ul{margin:0; padding:0; list-style:none}
+.tlbody li{position:relative; font-size:15px; color:var(--ink-2); padding:0 0 9px 17px; line-height:1.58}
+.tlbody li:before{content:""; position:absolute; left:0; top:9px; width:5px; height:5px; border-radius:50%; background:var(--line)}
+.tlrow[data-kind="work"] .tlsector{margin-top:7px}
+.tlrow[data-kind="edu"] .tlsector{margin-top:7px; color:var(--ink-3); background:var(--bg-2); border:1px solid var(--line)}
+.cvtools{margin-top:14px; display:flex; gap:10px; flex-wrap:wrap}
+.btn{
+  font:inherit; font-size:13px; font-weight:600; cursor:pointer; padding:8px 14px;
+  border:1px solid var(--line); border-radius:6px; background:#fff; color:var(--ink-2);
+}
+.btn:hover{border-color:var(--accent); color:var(--accent)}
+@media print{.tlbody{display:block !important}.tlmore,.cvtools{display:none}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <span class="nm">Eike Sprecher</span>
+    <a href="#cases">Cases</a>
+    <a href="#how">How I work</a>
+    <a href="#layer">Systems</a>
+    <a href="#career">Career</a>
+    <a href="#next">What next</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap hero">
+    <div>
+      <div class="eyebrow">Commercial Growth &amp; Scaling Portfolio</div>
+      <h1>Eike Sprecher</h1>
+      <p class="sub">Turning technical capability into commercial reality in markets where the rules keep moving.</p>
+      <div class="contact">
+        <a class="primary" href="mailto:eike.sprecher@iese.net">Send an email</a>
+        <a href="https://www.linkedin.com/in/eikesprecher/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="Resume_Sprecher.pdf" target="_blank" rel="noopener">Download the CV (PDF)</a>
+      </div>
+    </div>
+    <div class="portrait"><img src="data:image/jpeg;base64,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" alt="Portrait of Eike Sprecher"></div>
+  </div>
+  <div class="wrap">
+    <div class="hquote">
+      <p>“His sense of responsibility and swift decision-making were exemplary and served as a source of inspiration for colleagues across Europe.”</p>
+      <cite>Antonio Esparducer, E-Commerce Manager Europe, Eurofins Scientific</cite>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="summary">
+  <div class="wrap">
+    <div class="slabel">SUMMARY</div>
+    <p class="lead">Purpose has decided every move so far, not the title. When I left aerospace in March 2020 for a business that did not yet exist, the decision was about what the work was for, and I have applied the same approach to every change since. Four industries followed in six years: aerospace manufacturing, pandemic-response biotech, regulated clinical e-commerce and maritime deep tech. The common thread is not the sector but the job: turning technical capability into commercial reality in markets where the rules keep moving, and building the team, the operating rhythm and the customer base that sustain it. Next is AI, in a company where the technology is real and the commercial path still has to be built.</p>
+  </div>
+</section>
+
+<section id="cases">
+  <div class="wrap">
+    <div class="slabel">Three cases</div>
+    <h2>The work, in full</h2>
+
+    <div class="filterbar">
+      <div class="fhint">Select a capability. The related cases stay in view.</div>
+      <div class="chips" id="chips">
+        <button class="chip" aria-pressed="true" data-tag="all">All cases</button>
+        <button class="chip" aria-pressed="false" data-tag="zero">Zero to one</button>
+        <button class="chip" aria-pressed="false" data-tag="reg">Regulated markets</button>
+        <button class="chip" aria-pressed="false" data-tag="pnl">P&amp;L ownership</button>
+        <button class="chip" aria-pressed="false" data-tag="multi">Multi-country scaling</button>
+        <button class="chip" aria-pressed="false" data-tag="ai">AI &amp; deep tech</button>
+        <button class="chip" aria-pressed="false" data-tag="team">Team building</button>
+        <button class="chip" aria-pressed="false" data-tag="price">Pricing &amp; unit economics</button>
+        <button class="chip" aria-pressed="false" data-tag="ent">Public tender &amp; enterprise</button>
+      </div>
+      <div class="fcount" id="fcount">3 of 3 cases in view.</div>
+    </div>
+
+    <!-- CASE 01 -->
+    <article class="case" id="case-01" data-tags="zero reg pnl team ent">
+      <div class="chead">
+        <div class="cno">CASE 01 — BUILDING A BUSINESS FROM ZERO</div>
+        <h3 class="ctitle">Zero to €48M: Eurofins “Safer@Work”</h3>
+        <div class="cmeta">Eurofins Scientific (global testing leader, €6.5B revenue) &nbsp;·&nbsp; Germany &amp; European key markets &nbsp;·&nbsp; Dec 2020 – Jun 2022 &nbsp;·&nbsp; Founding Commercial Lead, then General Manager, New Business Line – COVID-19 Testing</div>
+        <div class="ctags">
+          <span class="tag" data-tag="zero">Zero to one</span>
+          <span class="tag" data-tag="reg">Regulated markets</span>
+          <span class="tag" data-tag="pnl">P&amp;L ownership</span>
+          <span class="tag" data-tag="team">Team building</span>
+          <span class="tag" data-tag="ent">Public tender &amp; enterprise</span>
+        </div>
+      </div>
+      <div class="outcome">
+        <div class="olabel">OUTCOME</div>
+        <ul class="olist">
+          <li>€48M in 15 months from zero, 25% share on the first at-home PCR self-test, 150,000+ tests in six months</li>
+          <li>Exclusive testing rights at Frankfurt and Munich airports on public tender; I negotiated the Frankfurt contract personally</li>
+          <li>175-centre testing network built and running within 8 months</li>
+          <li>Nationwide daycare testing programme delivered for 10,000 children across 150+ centres, twice weekly</li>
+          <li>Team of 15 built and placed: one promotion into Eurofins leadership, three moves into senior PM roles at Airbus, Bentley and elsewhere</li>
+        </ul>
+      </div>
+      <div class="cbody" id="b1" hidden>
+        <div class="blk">
+          <div class="blabel">WHY</div>
+          <p>A pandemic hit, and I wanted to be part of the solution. Eurofins had idle PCR capacity and the country had a testing shortage. Joining meant leaving aerospace and engineering mid-career for a business unit that did not yet exist. But it was a chance to be part of the pandemic response and help millions of people stay safe. In it I found a deep and meaningful purpose in my work, something few professionals experience in a career.</p>
+        </div>
+        <div class="blk">
+          <div class="blabel">CONTEXT</div>
+          <p>The executive team handed me a name and a high-level idea. Nothing else existed: no commercial model, no regulatory framework, no distribution, no operations, no team beyond three inherited people. The founder and CEO authorised an effectively unlimited budget, which removed cost as a constraint and left only speed. Demand, obvious to everyone, was not the hard part. Eurofins Germany is not one company but 120+ separate legal entities across all divisions, each with its own CEO, priorities and P&amp;L, and none obliged to supply a cross-divisional unit that had never existed.</p>
+        </div>
+        <div class="blk">
+          <div class="blabel">HOW IT WAS DONE</div>
+          <div class="move">
+            <h4>The internal market came before the external one.</h4>
+            <p>Every promise I made to a customer depended on laboratory capacity that belonged to a different entity with its own CEO and its own priorities. So I inverted the sequence: I negotiated price and service-level agreements internally first, across every entity whose capacity the business would need, before bidding a single tender. That made the first months look slow. It also meant that when a corporate account or a government contract landed, the throughput behind it was already contracted rather than improvised, which is how I could commit to national volumes without owning a single laboratory.</p>
+          </div>
+          <div class="move">
+            <h4>I treated speed, not money, as the scarce resource.</h4>
+            <p>With the budget unconstrained, the usual prioritisation question inverts. It stops being what the business can afford and becomes what can be up and running before the window closes. I therefore sequenced work by how quickly it could go live rather than by cost or margin, and pushed decisions down to whoever held the facts instead of upward for approval. The first at-home PCR self-test in Germany and Austria reached the market ahead of competitors and ultimately took 25% share.</p>
+          </div>
+          <div class="move">
+            <h4>I built four segments in parallel on one operating core.</h4>
+            <p>Education, travel, enterprise and direct-to-consumer differ in buyer, sales cycle and compliance profile, but they draw on the same underlying capability. Rather than build them one after another and lose the window, I wrote a segment playbook that reused the operating core (logistics, laboratory routing, reporting and regulatory) and varied only the commercial layer on top. That is how my 15-person team ran public tenders, cruise lines, Formula 1 and MotoGP race weekends and consumer sales at the same time.</p>
+          </div>
+        </div>
+        <div class="tradeoff">
+          <h4>The trade-off: give the revenue away to get the scale.</h4>
+          <p>I could have kept the education programme inside Germany, where it would have counted cleanly as my unit’s result. Instead I handed the working model to country teams across Europe who ran it in their own markets, which meant roughly €37M of the €48M was booked on their profit-and-loss statements rather than Germany’s, with no reporting line back and no formal ownership on paper. Keeping it would have produced a smaller number that was unambiguously mine. Giving it away produced around four times the revenue for the company and no straightforward way to evidence my contribution in an org chart. The company outcome, and above all the impact, were the right things to optimise for.</p>
+        </div>
+      </div>
+      <button class="ctoggle" aria-expanded="false" aria-controls="b1"><span class="arw">▸</span><span class="lbl">Read the full case</span></button>
+    </article>
+
+    <!-- CASE 02 -->
+    <article class="case" id="case-02" data-tags="zero reg pnl multi price">
+      <div class="chead">
+        <div class="cno">CASE 02 — SCALING A REPEATABLE GROWTH SYSTEM</div>
+        <h3 class="ctitle">A go-to-market model that became the company standard</h3>
+        <div class="cmeta">Eurofins Scientific &nbsp;·&nbsp; Germany, Austria &amp; Switzerland &nbsp;·&nbsp; Jul 2022 – May 2024 &nbsp;·&nbsp; General Manager, D2C E-Commerce DACH</div>
+        <div class="ctags">
+          <span class="tag" data-tag="zero">Zero to one</span>
+          <span class="tag" data-tag="reg">Regulated markets</span>
+          <span class="tag" data-tag="pnl">P&amp;L ownership</span>
+          <span class="tag" data-tag="multi">Multi-country scaling</span>
+          <span class="tag" data-tag="price">Pricing &amp; unit economics</span>
+        </div>
+      </div>
+      <div class="outcome">
+        <div class="olabel">OUTCOME</div>
+        <ul class="olist">
+          <li>Adopted as the company-wide standard across 8 countries; the digital-commerce baseline for all Eurofins business units</li>
+          <li>First to launch in the European group and on schedule, delivered as its youngest manager</li>
+          <li>A new profitable product line taken to market first, from outside the original mandate</li>
+          <li>Full P&amp;L ownership in practice: product, pricing, marketing, fulfilment and customer experience</li>
+        </ul>
+      </div>
+      <div class="cbody" id="b2" hidden>
+        <div class="blk">
+          <div class="blabel">WHY</div>
+          <p>The COVID business had a planned end date and a ramp-down already mapped, which made the more useful question what the company would still need once it was gone. Selling clinical self-sampling tests directly to consumers was the answer, and the mandate arrived with a second and harder half attached: I had to build it so that it worked in Germany and then worked everywhere else without being rebuilt each time. A single shop would have been a project with a shelf life; an operating model every country could reuse would keep paying out long after whoever built it had moved on.</p>
+        </div>
+        <div class="blk">
+          <div class="blabel">CONTEXT</div>
+          <p>The Managing Director of DACH and the VP of Europe selected me for the role and gave me full P&amp;L ownership, with no template anywhere in the group. Clinical e-commerce is a difficult place to build, especially inside a B2B company: heavy regulation, fierce competition and constant price pressure, which makes finding products that are both compliant and commercially meaningful genuinely hard. I started with a team of three inherited from a previous business unit and eleven internal and external stakeholders across R&amp;D, Legal, Marketing, logistics and certification bodies who held sign-off but not the same priorities.</p>
+        </div>
+        <div class="blk">
+          <div class="blabel">HOW IT WAS DONE</div>
+          <div class="move">
+            <h4>I designed country two while country one was still being built.</h4>
+            <p>I sorted everything into genuinely local (language, payment methods, regulatory labelling, courier) or structural: catalogue logic, fulfilment flow, pricing governance, CX and reporting. I permitted variation only in the first. That single discipline is why the model reached eight countries in twelve months and was then adopted as the company-wide digital-commerce standard, and why each additional country cost a fraction of the first.</p>
+          </div>
+          <div class="move">
+            <h4>A live plan decided the launch date.</h4>
+            <p>I kept every workstream in a single plan with named owners, explicit dependencies and dates revised weekly rather than at milestone reviews, alongside a portfolio roadmap, contribution margins calculated per test and a forecast for the following year. Among more experienced managers across Europe, I was the only one maintaining a plan of that kind, which is what made my schedule defensible when it came under pressure. Days before go-live, a non-functional payment process threatened the launch date outright. This was the company’s first B2C business and top management was watching whether the division could deliver at all, so missing the date would have cost far more than the few weeks involved. I made the case for holding it directly to everyone involved, and the team worked late and through the weekend, including testing development iterations alongside the developers in India to clear the critical issues. The shop launched on schedule and first in the European group. Afterwards I invited the whole team for dinner and covered the cost myself, because people who give up a weekend for someone else’s deadline should be thanked in a way they remember.</p>
+          </div>
+          <div class="move">
+            <h4>I treated the internal price as a starting point, not a given.</h4>
+            <p>An untapped niche in animal testing looked commercially attractive, but the consumable and analysis costs quoted by the central purchasing team left no viable margin, and on those numbers the product line was dead before it began. Rather than accept the internal figure as fixed, I approached the laboratories and suppliers directly and agreed rates below what the central team had secured, which inside a group of that size requires a documented case rather than a request. The line launched profitably and first to market, and became a new revenue stream for the unit. None of it sat in my original mandate: I identified the gap, built the numbers and drove the launch through.</p>
+          </div>
+        </div>
+        <div class="tradeoff">
+          <h4>The trade-off: push the call, then own the miscalculation.</h4>
+          <p>Customers were engaging with products and filling their baskets, then abandoning at the checkout stage. Working through the reports, I found an abandonment rate well above benchmark and a significant volume of lost sales behind it, so I proposed a redesign of the checkout process. My manager, an e-commerce specialist with far deeper knowledge of user behaviour than I had, accepted that the rate was high but read its impact on overall sales as much smaller than I did. I kept pushing on the scale of the missed opportunity, the decision sat with me, and the improvements went in. Sales rose, but modestly, and well short of what I had projected. He had been right about the magnitude, and I said so plainly in the review rather than let the result be quietly reframed. Conviction is what gets a proposal built; admitting a mistake, owning it and learning from it is what builds an open work culture where failing is allowed while striving for the best outcome.</p>
+        </div>
+      </div>
+      <button class="ctoggle" aria-expanded="false" aria-controls="b2"><span class="arw">▸</span><span class="lbl">Read the full case</span></button>
+    </article>
+
+    <!-- CASE 03 -->
+    <article class="case" id="case-03" data-tags="ai reg multi price">
+      <div class="chead">
+        <div class="cno">CASE 03 — COMMERCIALISING AI &amp; DEEP TECH</div>
+        <h3 class="ctitle">Two commercial paths for a maritime AI scale-up</h3>
+        <div class="cmeta">Navozyme (AI &amp; blockchain maritime-tech scale-up) &nbsp;·&nbsp; Europe, MENA &amp; Asia &nbsp;·&nbsp; Jun – Aug 2025 &nbsp;·&nbsp; MBA Summer Associate, Growth Strategy &amp; Commercialization</div>
+        <div class="ctags">
+          <span class="tag" data-tag="ai">AI &amp; deep tech</span>
+          <span class="tag" data-tag="reg">Regulated markets</span>
+          <span class="tag" data-tag="multi">Multi-country scaling</span>
+          <span class="tag" data-tag="price">Pricing &amp; unit economics</span>
+        </div>
+      </div>
+      <div class="outcome">
+        <div class="olabel">OUTCOME</div>
+        <ul class="olist">
+          <li>Still in active use 12+ months on: the market-expansion playbook for the two core products, confirmed by the management team</li>
+          <li>Two market-entry strategies delivered in new verticals, each with regulatory route and a low-cost validation sequence</li>
+          <li>Presented to the C-suite and board: segmentation, pricing architecture and partner/channel strategy</li>
+        </ul>
+      </div>
+      <div class="cbody" id="b3" hidden>
+        <div class="blk">
+          <div class="blabel">WHY</div>
+          <p>I chose the MBA to close specific gaps and deepen my business knowledge, and the internship to close the last one. Navozyme offered real AI and blockchain in a heavy, regulated, unglamorous industry, which is exactly where adoption is hardest and the commercial translation matters most. It also solved a problem worth solving: vessels idle four to six hours waiting for paper approvals, burning fuel and emitting CO₂ the entire time.</p>
+        </div>
+        <div class="blk">
+          <div class="blabel">CONTEXT</div>
+          <p>The engagement ran three months and carried two mandates. Navozyme had built an AI platform for predicting and orchestrating port fuelling operations but had no route to market. Alongside it, a working blockchain credentialing product was generating value inside maritime while investors wanted evidence that the company was not dependent on a single industry. Maritime sales cycles are long enough that no deal would close within the engagement, so I had no direct customer contact to learn from, though the CEO and CRO shared what had worked commercially for other products. My audience was a C-suite of a Singaporean founder, a European CCO and an American CTO.</p>
+        </div>
+        <div class="blk">
+          <div class="blabel">HOW IT WAS DONE</div>
+          <div class="move">
+            <h4>Track one started at the operating pain, not the algorithm.</h4>
+            <p>Port authorities routinely quote one-hour waiting times against a reality closer to ten, an order-of-magnitude error that damages their competitiveness with shipping lines and that nobody inside the port can currently correct. A large tanker sitting at anchor burns several tonnes of fuel a day doing nothing. Before beginning any pricing or packaging work, I mapped the job each stakeholder was actually trying to get done, separately for port authorities, fuel suppliers, ship agents and vessel owners, because each of them pays for a different outcome. That is what turned a machine-learning prediction built on satellite tracking data from an impressive feature into a number a harbour master could take to their own board and defend.</p>
+          </div>
+          <div class="move">
+            <h4>Track one sold into a problem the customer had already named.</h4>
+            <p>I designed the commercial model deliberately as a pull rather than a push. I pitched nothing as an unsolicited solution; every conversation opened on a problem the buyer had already articulated, which in a conservative industry is the difference between a meeting and a pilot. I approached port authorities first, because their regulatory credibility opens the door to the private suppliers who follow their lead, and I sequenced the plan to secure a reference customer before the product was finished rather than after. I built the full commercial package around that sequence: ideal customer profiles, an ROI model, subscription pricing, the metrics needed to run the funnel, the adoption barriers each segment would raise and how to answer them, and the board and sales scripts to carry the story.</p>
+          </div>
+          <div class="move">
+            <h4>Track two proved the technology outside its home industry.</h4>
+            <p>If a capability is genuinely differentiated, it should be worth something to a buyer who has never heard of shipping. I selected, sized and pressure-tested two regulated non-maritime verticals against the existing blockchain credentialing product, mapping the regulatory approval route for each and naming target companies for early validation. I then packaged both not as strategies to execute but as lean validation guides, so that demand could be tested in a handful of conversations before any capital or engineering time was committed.</p>
+          </div>
+        </div>
+        <div class="tradeoff">
+          <h4>The trade-off: the comprehensive plan was not the one that got used.</h4>
+          <p>The full go-to-market strategy has not been implemented, as the company restructured and refocused on its first core products. What was adopted was the narrower and more operational work: the market-expansion playbook for the two core products, built down to the level of significant players, contact networks and market dynamics per location, which the management team confirmed was still in active use more than a year later.</p>
+        </div>
+      </div>
+      <button class="ctoggle" aria-expanded="false" aria-controls="b3"><span class="arw">▸</span><span class="lbl">Read the full case</span></button>
+    </article>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="slabel">HOW I WORK</div>
+    <h2>How I work with other people</h2>
+    <p class="lead" style="margin-bottom:30px">Five things that hold true across four industries, in my own words and in the words of the people I have worked with.</p>
+    <div class="behind">
+      <div class="bitem"><p><span class="plabel">Product</span><b>I translate between the engineers and the customer.</b> I can sit with a CTO, a developer and a customer in the same week and reconcile what is buildable with what someone will actually pay for. It rests on degrees in both engineering and business, and on six years of doing it. The method is the same every time: work out what is technically feasible, then rank what sits inside that by what is worth most to the customer. The constraint comes first and the value ranking second, so nothing gets sold that the technology cannot do. At Navozyme the PhD who built the AI algorithm confirmed it from his side, for the product I wrote the go-to-market strategy for. <a class="cref" href="#case-03">See Case 03</a></p></div>
+
+      <div class="bitem"><p><span class="plabel">Judgment</span><b>I decide with the facts I have, I own the result, and I say when I am wrong.</b> Most of the time the facts are already in the room and the decision takes seconds. When they are not, I name the questions that are still open, get them answered, and come back with a date rather than leave it hanging. Options get discussed openly with the team, but ownership of the final call stays with me, and I make it on what is best for the business. I once pushed a checkout redesign against my manager’s reading of the likely impact. Sales rose, but well short of what I had projected. He had been right about the magnitude, and I said so plainly in the review with my own numbers on the slide, rather than let a partial win be quietly presented as a full one. One wrong call costs you that call. Hiding it costs every forecast you make afterwards, including the ones you got right. <a class="cref" href="#case-02">See Case 02</a></p></div>
+
+      <div class="bitem"><p><span class="plabel">Team</span><b>I lead from the front, and my team decides the route.</b> I take work into my own hands rather than delegate it and wait: days before the DACH launch a broken payment process threatened the date, and I spent the weekend testing development iterations with the developers in India until the blockers cleared. But that is the exception, not the operating model. What I give the team is the vision, the goal, the tools, and one route I know will get us there — a starting point, not an instruction. The detailed decisions belong to them, because they see the situation at a level of detail I do not, and a team that picks its own route finds the flaw in it long before I would. Alongside that I learn what each person is aiming at in their career and what matters to them outside work, and where the business allows it I build the arrangement around that. One project manager trained three evenings a week with his semi-professional handball team, so his workload and meetings went around those evenings; someone else moved her start time to care for a sick parent in the afternoons. Everyone got the same fairness, not the same schedule. This is not a soft extra: people who feel genuinely valued raise problems while those problems are still small, and small problems are the only cheap ones. What direct reports notice is the absence of “emotional outbursts, unnecessary pressure, or negligence” — the pressure goes on the problem, not on the people. <a class="cref" href="#case-02">See Case 02</a></p></div>
+
+      <div class="bitem"><p><span class="plabel">Execution</span><b>I deliver on the date I give.</b> What I commit to is delivered on the date I gave, or before it. As the youngest manager in the European group I was the first to launch on schedule while better-resourced countries postponed, but the habit matters more than that one launch. Do it for long enough and the effect compounds: people stop adding buffer to your dates, stop chasing you for status, and start planning their own work on top of yours. That only holds if the plan behind the date is real, which is the discipline described in the next section. <a class="cref" href="#case-02">See Case 02</a></p></div>
+
+      <div class="bitem"><p><span class="plabel">Organisation</span><b>Respect follows competence, and people outlast the business.</b> My authority has usually not been formal. Eurofins Germany is not one company but more than 120 separate legal entities, each with its own CEO and P&amp;L, and none obliged to supply a cross-divisional unit that had never existed. For every test type I had to find the specific labs that could run it and earn their agreement on price and service levels, because I had no standing to instruct any of them. The IESE leadership assessment put the same thing more formally: respect earned through demonstrated competence rather than authority, generating “voluntary deference rather than compliance”, with the strongest results in team cohesion and in building loyal, high-performing teams. The same standard applies on the way out. The COVID unit was always going to close, so I developed the team along the way and actively pushed them into stronger roles once it did: senior positions at Airbus and Bentley, a leadership role inside Eurofins, CV reviews and referrals for those who wanted them. The ramp-down also meant letting people go, and the closeness made that harder rather than easier. I did it anyway, and put the effort into the part that was still within my control, getting each person into a next role that moved their career forward instead of just ending the last one. The relationships outlasted the employment. <a class="cref" href="#case-01">See Case 01</a></p></div>
+    </div>
+    <p class="srcnote"><b>Sources.</b> Quoted assessments come from a written evaluation by Nadim Brockhaus, Project Manager, July 2021 to January 2024; a letter of recommendation from Antonio Esparducer, E-Commerce Manager Europe, Eurofins Scientific; and the leadership assessment from the IESE Power &amp; Influence course, 2025 to 2026. Individual team members are described without names.</p>
+  </div>
+</section>
+
+<section id="layer">
+  <div class="wrap">
+    <div class="slabel">THE REUSABLE LAYER</div>
+    <h2>What comes on day one</h2>
+    <p class="lead">The repeatable systems behind the three cases, not a skills list.</p>
+    <div class="behind" style="margin-top:24px"><div class="bitem"><p><b>The plan is always live, never a document.</b> I run every project on one live plan with named owners, explicit dependencies and dates updated weekly rather than at review gates, alongside contribution margins calculated per product and a forward business forecast. This is why the DACH region launched first and on schedule while better-resourced countries had to postpone.</p></div></div>
+    <div class="kits">
+      <div class="kit">
+        <h3>Go-to-market playbook</h3>
+        <ul>
+          <li>Market sizing and segmentation</li>
+          <li>ICP definition and JTBD mapping</li>
+          <li>Pricing, packaging and ROI models</li>
+          <li>Channel and partner selection</li>
+          <li>Sales enablement, scripts and messaging</li>
+          <li>CAC / LTV / ARR metric frameworks</li>
+        </ul>
+      </div>
+      <div class="kit">
+        <h3>Market-expansion framework</h3>
+        <ul>
+          <li>Multi-country launch sequencing</li>
+          <li>Regulated-market entry (health, aviation, maritime)</li>
+          <li>Enterprise, public-tender and D2C segments</li>
+          <li>Per-market player and stakeholder mapping</li>
+          <li>Reference-customer-first acquisition sequences</li>
+          <li>Europe, MENA and APAC exposure</li>
+        </ul>
+      </div>
+      <div class="kit">
+        <h3>Commercial operating system</h3>
+        <ul>
+          <li>Forecasting and pipeline reviews</li>
+          <li>Pricing governance</li>
+          <li>Product- and market-launch cadence</li>
+          <li>Cross-functional alignment without authority</li>
+          <li>Weekly executive and board reporting</li>
+          <li>Live plans with owners and dates</li>
+        </ul>
+      </div>
+      <div class="kit">
+        <h3>Zero-to-one build kit</h3>
+        <ul>
+          <li>Regulatory and quality frameworks</li>
+          <li>Distribution and fulfilment setup</li>
+          <li>Commercial model design</li>
+          <li>Operational infrastructure at speed</li>
+          <li>Team hiring, coaching and placement</li>
+          <li>Internal supply and stakeholder negotiation</li>
+        </ul>
+      </div>
+    </div>
+    <div class="through"><b>The through-line:</b> build the commercial engine around a product (market, funnel, team and operating rhythm) in technical and regulated environments where most commercial leaders hesitate. Four industries have turned that into a repeatable method rather than a single result. The next one is AI.</div>
+  </div>
+</section>
+
+<section id="career">
+  <div class="wrap">
+    <div class="slabel">CAREER</div>
+    <h2>Four industries in six years</h2>
+    <p class="lead" style="margin-bottom:8px">Commercial operator who builds go-to-market engines, enters new markets, and makes scale repeatable. Scaled a business from zero to €48M in 15 months by winning government contracts, building teams, and expanding across borders in a regulated, multicultural environment. Combines engineering depth with P&amp;L ownership and end-to-end GTM execution; equally capable at strategic altitude and ground-level execution.</p>
+    <div class="behind" style="margin:22px 0 4px"><div class="bitem"><p><b>Four industries beat ten years in one.</b> Aerospace taught me process and tolerance for complexity, biotech regulated speed, e-commerce unit economics, maritime deep-tech translation. Complex problems rarely respect industry boundaries, and the layered perspective I have built is what lets me recognise the pattern faster.</p></div></div>
+    <div class="cvtools">
+      <button class="btn" id="openAll">Open all details</button>
+      <button class="btn" id="closeAll">Close all details</button>
+      <a class="btn" href="Resume_Sprecher.pdf" target="_blank" rel="noopener" style="text-decoration:none">Download the CV (PDF)</a>
+    </div>
+    <div class="tl" style="margin-top:30px">
+      <div class="tlrow" data-kind="edu">
+        <span class="dot"></span>
+        <button class="tlhead" aria-expanded="false" aria-controls="cv6">
+          <span class="tldate">2024 – 2026</span>
+          <span class="tlrole">Master of Business Administration</span>
+          <span class="tlorg">IESE Business School · Barcelona, Spain</span>
+          <span class="tlsector">Education</span>
+          <span class="tlmore"><span class="arw">▸</span> Details</span>
+        </button>
+        <div class="tlbody" id="cv6" hidden>
+          <p class="cvdesc">Master of Business Administration (MBA Program); IESE Trust Scholarship (EUR 20k); Focus: Technology General Management<br>Core Areas: AI/ML Strategy, Digital Transformation, Strategic Execution, Global Market Expansion, Organizational Leadership</p>
+        </div>
+      </div>
+      <div class="tlrow" data-kind="work">
+        <span class="dot"></span>
+        <button class="tlhead" aria-expanded="false" aria-controls="cv1">
+          <span class="tldate">Jun 2025 – Aug 2025</span>
+          <span class="tlrole">MBA Summer Associate – Growth Strategy &amp; Commercialization</span>
+          <span class="tlorg">Navozyme Pte Ltd. · Barcelona, Spain</span>
+          <span class="tlsector">Maritime deep tech · AI</span>
+          <span class="tlmore"><span class="arw">▸</span> Details</span>
+        </button>
+        <div class="tlbody" id="cv1" hidden>
+          <p class="cvdesc">AI &amp; Blockchain Maritime Tech Scale-Up</p>
+          <ul><li>Designed and owned the full commercial strategy for an AI-powered maritime SaaS platform, covering market segmentation, pricing architecture, and partner/channel strategy across Europe, the Middle East, and Asia; presented recommendations to the C-suite and board</li>
+        <li>Built the market expansion playbook for two core products, mapping all significant players, contact networks, and market dynamics across each target location; the framework is still actively being used by the management team, confirming its lasting commercial value</li>
+        <li>Partnered with a multicultural C-suite (Singaporean founder, European CCO, American CTO) to translate deep-tech capabilities in blockchain and AI/ML prediction models into commercially viable propositions for enterprise customers across MENA and APAC</li></ul>
+        </div>
+      </div>
+      <div class="tlrow" data-kind="work">
+        <span class="dot"></span>
+        <button class="tlhead" aria-expanded="false" aria-controls="cv2">
+          <span class="tldate">Jul 2022 – May 2024</span>
+          <span class="tlrole">General Manager, D2C E-Commerce DACH</span>
+          <span class="tlorg">Eurofins Scientific SE · Germany, Austria &amp; Switzerland</span>
+          <span class="tlsector">Regulated clinical e-commerce</span>
+          <span class="tlmore"><span class="arw">▸</span> Details</span>
+        </button>
+        <div class="tlbody" id="cv2" hidden>
+          <p class="cvdesc">Global leader in analytical testing services with over 900 labs in 62 countries, annual turnover of EUR 6.5B, 65k+ employees</p>
+          <ul><li>Appointed by the MD of DACH and VP of Europe to found and lead a new e-commerce business unit from zero; held full P&amp;L ownership across product strategy, pricing, marketing, fulfilment, and customer experience for self-sampling home tests</li>
+        <li>Designed a replicable e-commerce operating model and scaled the platform to eight countries within 12 months; the framework was adopted as the company-wide standard across all business units globally, setting the baseline for Eurofins’ digital commerce expansion</li>
+        <li>Created market-leading products in the human self-sampling segment by coordinating 11 stakeholders across R&amp;D, Legal, Marketing, logistics, and certification bodies, driving a customer-centric strategy</li>
+        <li>Recognized an untapped niche in animal testing and drove a new product line from concept to market; outpriced the central purchasing team through direct supplier negotiation to secure first-to-market entry and establish a new profitable revenue stream</li></ul>
+        </div>
+      </div>
+      <div class="tlrow" data-kind="work">
+        <span class="dot"></span>
+        <button class="tlhead" aria-expanded="false" aria-controls="cv3">
+          <span class="tldate">Aug 2021 – Jun 2022</span>
+          <span class="tlrole">General Manager, New Business Line – COVID-19 Testing</span>
+          <span class="tlorg">Eurofins Scientific SE · Germany &amp; European key markets</span>
+          <span class="tlsector">Pandemic-response biotech</span>
+          <span class="tlmore"><span class="arw">▸</span> Details</span>
+        </button>
+        <div class="tlbody" id="cv3" hidden>
+          <ul><li>Generated €48M in revenue in 15 months by leading market entry and commercial expansion across education, travel, enterprise, and D2C testing segments; won accounts including TUI Cruise, MSC, FIA (Formula 1) and MotoGP, and secured local government contracts across Germany; reported directly to VP &amp; CCO Europe</li>
+        <li>Built and led a 15-person team of international high performers across Sales, Marketing, and Project Management, fostering inclusion and alignment around a shared vision; proactively supported each member's career progression and transition as the pandemic concluded, with individuals securing senior roles at Eurofins, Airbus and beyond</li>
+        <li>Delivered large-scale commercial programs simultaneously at speed: a network of 175 test centers in 8 months, nationwide daycare testing (10k children, 150+ centers, twice weekly), and global F1/MotoGP testing for race teams and officials; planned and executed a staged business ramp-down following peak operations, managing client transitions and team redeployment through to program closure</li></ul>
+        </div>
+      </div>
+      <div class="tlrow" data-kind="work">
+        <span class="dot"></span>
+        <button class="tlhead" aria-expanded="false" aria-controls="cv4">
+          <span class="tldate">Dec 2020 – Jul 2021</span>
+          <span class="tlrole">Founding Commercial Lead – COVID-19 Testing</span>
+          <span class="tlorg">Eurofins Scientific SE · Germany</span>
+          <span class="tlsector">Pandemic-response biotech</span>
+          <span class="tlmore"><span class="arw">▸</span> Details</span>
+        </button>
+        <div class="tlbody" id="cv4" hidden>
+          <ul><li>Founded Eurofins’ first cross-divisional business unit in Germany, taking COVID-19 testing services from concept to full commercial operations, establishing the business model, regulatory framework, and operational infrastructure entirely from scratch</li>
+        <li>Launched the first self-sampling COVID-19 PCR test kit in Germany and Austria for easy at-home testing, achieving 25% market share and processing 150,000+ tests within 6 months</li>
+        <li>Secured exclusive COVID-19 testing rights for two major German airports (Frankfurt, Munich) by handling competitive tenders from corporate and government entities, navigating complex procurement processes and stakeholder requirements</li></ul>
+        </div>
+      </div>
+      <div class="tlrow" data-kind="work">
+        <span class="dot"></span>
+        <button class="tlhead" aria-expanded="false" aria-controls="cv5">
+          <span class="tldate">May 2019 – Dec 2020</span>
+          <span class="tlrole">Project Manager &amp; Engineering Consultant</span>
+          <span class="tlorg">Airbus SE, on behalf of ALTEN Technology GmbH · Hamburg, Germany</span>
+          <span class="tlsector">Aerospace manufacturing</span>
+          <span class="tlmore"><span class="arw">▸</span> Details</span>
+        </button>
+        <div class="tlbody" id="cv5" hidden>
+          <p class="cvdesc">Engineering service provider, serving multiple industries and part of ALTEN S.A. (annual turnover EUR 4.1B, 54k+ employees)</p>
+          <ul><li>Led cross-functional coordination across 20+ stakeholders and 6 departments to reorganize and expand an aircraft production line segment, increasing output by 27% (7 to 9 aircraft/month) and reducing production delays by 13%</li>
+        <li>Built a business case projecting €2.3M in annual savings from an 18% production time reduction through modularization; approved and implemented by senior leadership</li></ul>
+        </div>
+      </div>
+      <div class="tlrow" data-kind="edu">
+        <span class="dot"></span>
+        <button class="tlhead" aria-expanded="false" aria-controls="cv7">
+          <span class="tldate">2013 – 2018</span>
+          <span class="tlrole">B.Sc. Mechanical Engineering · M.Sc. Product Development, Materials and Production</span>
+          <span class="tlorg">Hamburg University of Technology · Hamburg, Germany</span>
+          <span class="tlsector">Education</span>
+          <span class="tlmore"><span class="arw">▸</span> Details</span>
+        </button>
+        <div class="tlbody" id="cv7" hidden>
+          <p class="cvdesc">B.Sc., Mechanical Engineering, Grade: 2.7 (Good); M.Sc., Product Development, Materials and Production, Grade: 1.8 (Very Good)<br>Exchange semesters at Nanyang Technological University (Singapore, 2018) and Indian Institute of Technology Madras (India, 2016)</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 style="margin-top:52px">General information</h2>
+    <div class="two" style="margin-bottom:18px">
+      <div class="card">
+        <h3>Languages</h3>
+        <p>German (Mother Tongue)</p>
+        <p>English (Fluent, C2)</p>
+      </div>
+      <div class="card">
+        <h3>Contact</h3>
+        <p><a href="mailto:eike.sprecher@iese.net">eike.sprecher@iese.net</a></p>
+        <p><a href="https://www.linkedin.com/in/eikesprecher/" target="_blank" rel="noopener">linkedin.com/in/eikesprecher</a></p>
+      </div>
+    </div>
+    <div class="job gen" style="border-bottom:none; padding-top:6px">
+      <ul style="padding-left:0">
+        <li><b>Skills:</b> GTM Strategy &amp; Operations, International Market Entry, P&amp;L Management, Revenue Forecasting &amp; Pipeline Modelling, Pricing Strategy &amp; Unit Economics, Go-to-Market Playbook Design, Partner/Channel Strategy, AI/GenAI Commercialization, Cross-functional Team Leadership</li>
+        <li><b>Additional Education (2016 - 2019):</b> Harvard Business School Online (Disruptive Strategy, Financial Accounting, Business Analytics and Economics)</li>
+        <li><b>Volunteering:</b> Led cross-functional pro-bono consulting in Mexico for Reintegra Foundation's social enterprise bakery, delivering data-driven strategic recommendations on legal restructuring, operational scaling, and sustainable business model optimization to support at-risk youth programs | Saved a local business owner from bankruptcy during COVID-19 by securing government financial aid and building a turnaround plan</li>
+        <li><b>Interests:</b> Competitive track and field athlete (100m/200m sprinter, 25+ years); culinary enthusiast (organizing community cooking events)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="next">
+  <div class="wrap">
+    <div class="slabel">WHAT NEXT</div>
+    <h2>Why AI next</h2>
+    <p class="lead" style="font-size:21px; margin-bottom:26px">AI will change how almost every job and almost every industry operates. Implemented responsibly, the gain is real and it reaches past the companies building the technology: work done faster and better, for businesses and for the people they serve. I want to lead that change, not watch it happen.</p>
+    <p class="lead">AI is moving from pilot to production, and the hard part is no longer the model. It is whether an operations director, a compliance officer and a procurement committee will each formally endorse it and take responsibility for that decision. The industries where that resistance runs highest, and where the value released is largest, are the traditional and regulated ones in which my record was built. Winning there requires someone who can hold a credible conversation on the same day with the front-line teams who will operate the system and with the executives and technical governance bodies who must approve it. Six years of translating between engineers, executives and customers is what produced that capability, and it is the work worth doing next, done responsibly, with limitations stated, governance in place and value demonstrated before it is claimed.</p>
+    <div class="slabel" style="margin:38px 0 16px">THE PART THAT TRANSFERS</div>
+    <div class="behind"><div class="bitem"><p><b>Moving ground is the normal operating condition.</b> Through the pandemic, testing regulation changed by federal state and by month, and I had to adjust or rebuild the commercial model each time it did. What I bring to that is structure: I install clear ownership, repeatable processes and a documented operating rhythm in environments that are unstructured and continuously moving, so the organisation keeps its footing while the ground shifts. Building something durable while the rules are still being written is a specific skill, and it is the one that transfers most directly to a technology whose rules regulators have not finished writing.</p></div></div>
+  </div>
+</section>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Get in touch</h2>
+    <div class="frow">
+      <div><a href="mailto:eike.sprecher@iese.net">eike.sprecher@iese.net</a></div>
+      <div><a href="https://www.linkedin.com/in/eikesprecher/" target="_blank" rel="noopener">linkedin.com/in/eikesprecher</a></div>
+      <div><a href="Resume_Sprecher.pdf" target="_blank" rel="noopener">Download the CV (PDF)</a></div>
+    </div>
+    <div class="fnote">Eike Sprecher · Commercial Growth &amp; Scaling Portfolio</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  function bind(btn, openLbl, closeLbl){
+    btn.addEventListener('click', function(){
+      var body = document.getElementById(btn.getAttribute('aria-controls'));
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      body.hidden = open;
+      var l = btn.querySelector('.lbl');
+      if (l) l.textContent = open ? openLbl : closeLbl;
+    });
+  }
+  document.querySelectorAll('.ctoggle').forEach(function(b){ bind(b,'Read the full case','Close the full case'); });
+  document.querySelectorAll('.tlhead').forEach(function(b){ bind(b,'',''); });
+
+  function setAll(state){
+    document.querySelectorAll('.tlhead').forEach(function(b){
+      b.setAttribute('aria-expanded', String(state));
+      document.getElementById(b.getAttribute('aria-controls')).hidden = !state;
+    });
+  }
+  var oa=document.getElementById('openAll'), ca=document.getElementById('closeAll');
+  if(oa) oa.addEventListener('click', function(){ setAll(true); });
+  if(ca) ca.addEventListener('click', function(){ setAll(false); });
+
+  var chips = Array.prototype.slice.call(document.querySelectorAll('.chip'));
+  var cases = Array.prototype.slice.call(document.querySelectorAll('.case'));
+  var count = document.getElementById('fcount');
+  function apply(tag){
+    var shown = 0;
+    cases.forEach(function(c){
+      var match = tag === 'all' || (' ' + c.dataset.tags + ' ').indexOf(' ' + tag + ' ') > -1;
+      c.classList.toggle('hide', !match);
+      if (match) shown++;
+      c.querySelectorAll('.tag').forEach(function(t){
+        t.classList.toggle('on', tag !== 'all' && t.dataset.tag === tag);
+      });
+    });
+    chips.forEach(function(ch){ ch.setAttribute('aria-pressed', String(ch.dataset.tag === tag)); });
+    count.textContent = shown + ' of ' + cases.length + ' cases in view.';
+  }
+  chips.forEach(function(ch){ ch.addEventListener('click', function(){ apply(ch.dataset.tag); }); });
+
+  document.querySelectorAll('.cref').forEach(function(a){
+    a.addEventListener('click', function(){
+      var c = document.querySelector(a.getAttribute('href'));
+      if(!c) return;
+      if (c.classList.contains('hide')) apply('all');
+      var t = c.querySelector('.ctoggle');
+      if (t && t.getAttribute('aria-expanded') !== 'true') t.click();
+    });
+  });
+})();
+</script>
+</body>
+</html>
